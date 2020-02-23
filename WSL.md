@@ -13,7 +13,7 @@
 # Remove outdated R
 sudo apt-get --purge remove r-base r-base-core r-base-dev
 
-# updat R source
+# update R source
 sudo vim /etc/apt/sources.list
 deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/
 
