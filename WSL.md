@@ -32,5 +32,23 @@ sudo apt-get install libxml2-dev
 sudo apt-get -y install libssl-dev subversion scons libfuse-dev gcc
 sudo apt-get -y install libmariadb-dev libudunits2-dev
 sudo apt-get install libhdf5-dev
+```
+----
 
+## Bioconda
+
+```bash
+## Miniconda
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+
+## Add channels
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+conda config --set show_channel_urls yes
 ```
